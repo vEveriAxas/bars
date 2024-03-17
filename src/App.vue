@@ -9,10 +9,18 @@
 
 <script setup>
 import { example } from './api/example';
+import { onMounted } from 'vue';
+
+
 
 async function handler() {
     await example();
 }
+
+onMounted(async() => {
+    await handler();
+});
+
 </script>
 
 <style>
