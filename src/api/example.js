@@ -7,7 +7,7 @@ async function example() {
     try {
         // Получение данных с сервера
         console.log('выполнение ');
-        const response = await axios.get(hostName + '/', {
+        const response = await axios.get(hostName + '/hello', {
             headers: {
                 'Content-Type': 'application/www-form-urlencoded',
             },
